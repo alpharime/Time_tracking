@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+$laptop-screen: 1024px;
+$tab-screen-min: 700px;
+$tab-screen-max: 1023px;
+$primary_Colors: ( "main":hsl(246, 80%, 60%),
+"work":hsl(15, 100%, 70%),
+"play": hsl(195, 74%, 62%),
+"study":hsl(348, 100%, 68%),
+"exercise":hsl(145, 58%, 55%),
+"social":hsl(264, 64%, 52%),
+"self_care":hsl(43, 84%, 65%),
+);
+$neutral: ( "Very_dark_blue": hsl(226, 43%, 10%),
+"Dark_blue": hsl(235, 46%, 20%),
+"Desaturated_blue": hsl(235, 45%, 61%),
+"Pale_Blue": hsl(236, 100%, 87%));
+@function color($key) {
+    @return map-get($primary_Colors,
+    $key)
+}
+
+;
+@function neutral($key) {
+    @return map-get($neutral,
+    $key)
+}
+
+;
